@@ -1,6 +1,6 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  border: #fbc4ab 5px solid;
+  font-family: 'Open Sans', sans-serif;
+  //border: #fbc4ab 0.1rem solid;
   background-color: #fbc4ab;
 }
 
@@ -21,7 +21,6 @@ header {
   h1 {
     font-size: 3rem;
     font-weight: bolder;
-    margin: 0;
     align-items: flex-start;
     justify-content: flex-start;
   }
@@ -31,13 +30,18 @@ header {
     cursor: pointer;
   }
 
+  #logo {
+    color: #f08080;
+    text-decoration: none;
+  }
+
   .links {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     a {
       text-decoration: none;
@@ -55,8 +59,8 @@ header {
 .about {
   padding: 2rem 5rem;
   background-color: #f8ad9d;
-  color: #ffdab9;
-  box-shadow: #f08080 0px 0px 10px 0px;
+  color: black;
+  box-shadow: #f08080 0 0 0.5rem 0.2rem;
   border-radius: 10px 10px 0 0;
   z-index: 100;
 
@@ -69,7 +73,8 @@ header {
   }
 
   p {
-    font-size: 1rem;
+    text-align: right;
+    font-size: 1.5rem;
     padding-top: 1rem;
     font-weight: lighter;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -82,7 +87,7 @@ header {
   color: #ffdab9;
   text-shadow: 0px 0px 10px #f8ad9d;
   z-index: 100;
-  box-shadow: #ffdab9 0 0 10px 0;
+  box-shadow: #f08080 0 0 0.5rem 0.2rem;
   border-radius: 10px 10px 0 0;
 
   h2 {
@@ -100,7 +105,7 @@ header {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 1rem;
     font-weight: lighter;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -115,5 +120,92 @@ header {
     font-weight: bolder;
     color: white;
     text-shadow: 0px 0px 10px #f8ad9d;
+  }
+}
+
+.contact {
+  padding: 2rem 5rem;
+  background-color: #f4978e;
+  color: #ffdab9;
+  text-shadow: 0px 0px 10px #f8ad9d;
+  z-index: 100;
+  box-shadow: #f4978e 0 0 10rem 0.2rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .left_col {
+
+    h2 {
+      font-size: 3rem;
+      font-weight: bolder;
+      padding-top: 2rem;
+      margin-right: 25rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      label {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+      }
+
+      input, textarea {
+        width: 30rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid #ffdab9;
+        background-color: #f8ad9d;
+        color: black;
+      }
+
+      textarea {
+        height: 10rem;
+      }
+
+      #submit {
+        width: 10rem;
+        background-color: #ffdab9;
+      }
+    }
+
+    ::placeholder{
+      color: #ffdab9;
+    }
+  }
+  .right_col {
+    padding-left: 10rem;
+    width: 100%;
+
+    #map {
+      height: 80vh;
+      width: 100%;
+      border-radius: 1rem;
+      border: 2px solid #ffdab9;
+      z-index: 3;
+      box-shadow: #ffdab9 0 0 2rem 0.5rem;
+    }
+  }
+
+  #tomato{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 2rem;
+    z-index: 1;
   }
 }
